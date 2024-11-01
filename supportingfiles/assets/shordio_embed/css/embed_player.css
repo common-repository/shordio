@@ -1,0 +1,884 @@
+.clear {
+    clear: both;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+}
+
+.center-div {
+    text-align: center;
+}
+
+.control-wrapper {
+    /*height: 90px;
+   margin: 0 auto;
+   position: relative;
+   width: 400px;
+   z-index: 2;
+   top: 0;*/
+}
+
+.control-wrapper1 {
+    height: 90px;
+    display: inline-block;
+    position: relative;
+    width: 425px;
+    z-index: 2;
+    top: 0;
+    float: left;
+}
+
+.controls .title {
+    color: #FFFFFF;
+    font-size: 13px;
+    max-width: 360px;
+    float: left;
+    padding: 8px 15px;
+    border-right: solid 1px #979797;
+}
+
+.artist {
+    color: #EEEEEE;
+    font-size: 12px;
+    top: 36px;
+}
+
+.pl {
+    background: transparent url("../../images/spr.png") no-repeat scroll -274px -175px;
+    cursor: pointer;
+    height: 34px;
+    left: 270px;
+    position: absolute;
+    top: 20px;
+    width: 32px;
+}
+
+.pl:hover {
+    top: 21px;
+}
+
+.cover {
+    background: transparent url(../../data/cover1.jpg) no-repeat scroll center top;
+    border-radius: 5px 5px 5px 5px;
+    height: 94px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 94px;
+}
+
+
+/*.controls {
+   padding-left: 25px;
+}*/
+
+.controls .play,
+.controls .pause,
+.controls .rew,
+.controls .fwd,
+.controls .addplaylist,
+.controls .addfav,
+.controls .playspeed,
+.controls .view-info-plyr {
+    float: left;
+    cursor: pointer;
+}
+
+.controls .play {
+    background: url(../../images/play.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    display: block;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+.embed-player-wrap .controls .play {
+    background: url(../images/play_black.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.controls .pause {
+    background: url(../../images/pause.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.embed-player-wrap .controls .pause {
+    background: url(../images/pause_black.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.controls .rew {
+    background: url(../../images/backward.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    margin: 0 10px;
+    margin-top: 3px;
+}
+.embed-player-wrap .controls .rew {
+    background: url(../images/backward_black.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    margin: 0 10px;
+    margin-top: 3px;
+}
+
+.controls .fwd {
+    background: url(../../images/forward.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    margin: 0 10px;
+    margin-top: 3px;
+}
+
+.embed-player-wrap .controls .fwd {
+    background: url(../images/forward_black.png) 0 0 no-repeat;
+    width: 27px;
+    height: 30px;
+    margin: 0 10px;
+    margin-top: 3px;
+}
+/* additional buttons added  */
+
+.controls .addplaylist {
+    width: 23px;
+    height: 23px;
+    background-position: -254px -17px;
+    /*bottom: -25px;*/
+    position: absolute;
+    right: -170px;
+}
+
+
+
+.addplaylist.active {
+    background-position: -254px -54px !important;
+}
+
+.controls .addfav {
+    width: 31px;
+    height: 31px;
+    background-position: -229px -55px !important;
+    /*bottom: -25px;*/
+    position: absolute;
+    right: -204px;
+}
+
+.controls .view-info-plyr {
+    width: 31px;
+    height: 31px;
+    background-position: -260px -80px !important;
+    /*bottom: -25px;*/
+    position: absolute;
+    right: -232px;
+}
+
+.controls .playspeed {
+    display: block;
+    height: 25px;
+    width: 44px;
+}
+
+.playspeed span {
+    font-size: 15px;
+    color: #000;
+    letter-spacing: 0;
+    display: block;
+    line-height: 12px;
+    padding: 5px;
+    text-align: center;
+    width: 30px;
+    padding-top: 10px;
+}
+
+.addfav.addfav-active {
+    background-position: -229px -81px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.controls .visible {
+    display: block;
+}
+
+.volume {
+    height: 11px;
+    left: 186px;
+    position: absolute;
+    top: 96px;
+    width: 112px;
+}
+
+.tracker {
+    /* height: 2px;    
+   position: relative;    
+   width: 215px;
+   background: #2e2e2e;
+   float: left;
+   margin-top: 17px;*/
+    height: 20px;
+    position: relative;
+    width: 125px;
+    float: left;
+    margin-top: 6px;
+}
+
+.duration {
+    color: #000;
+    font-size: 13px;
+    float: left;
+    padding: 8px;
+    /*border-right: #979797 solid 1px ;*/
+}
+
+.duration span {
+    color: #000;
+}
+
+.ui-slider-range {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.ui-slider-handle {
+    cursor: pointer;
+    height: 20px;
+    margin-left: -5px;
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    left: 40%;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+    outline: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.volume .ui-slider-handle {
+    background: url("../../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;
+}
+
+.playlist {
+    background-color: #333333;
+    border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin: -10px 0 0 2px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    position: relative;
+    width: 326px;
+    z-index: 1;
+}
+
+.playlist li {
+    color: #EEEEEE;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+
+.playlist li.active {
+    font-weight: bold;
+}
+
+.liked_songs {
+    background: rgba(0, 0, 0, 0) url("../../images/btnplayer-fav.png") no-repeat scroll 0 0;
+    border: medium none;
+    height: 25px;
+    right: 10px;
+    outline: medium none;
+    position: absolute;
+    top: 42px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.liked_songs:hover {
+    background-position: -28px 0;
+}
+
+
+/* styles for small player */
+
+.player.player-small {
+    height: 60px;
+    left: 50%;
+    margin: 0 -150px;
+    width: 300px;
+    border: 1px solid #d1d1d1;
+}
+
+.player.player-small.plyrbg-grey {
+    background: #eeeeee none repeat scroll 0 0 !important;
+}
+
+.control-wrapper-small {
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.control-wrapper-small >.controls .play,
+.control-wrapper-small >.controls .pause {
+    background: transparent url("../../images/sprint_musicplayer-xs.png") no-repeat scroll 0 0;
+    float: left;
+}
+
+.control-wrapper-small > .controls .play {
+    background-position: 0 0;
+    height: 47px;
+    margin: -4px 4px -4px 5px;
+    width: 47px;
+}
+
+.control-wrapper-small>.controls .pause {
+    background-position: -52px 0;
+    height: 47px;
+    margin: -4px 4px -4px 5px;
+    width: 47px;
+}
+
+.control-wrapper-small > .title {
+    color: #000;
+    left: 60px;
+    max-width: 100px;
+    top: 0;
+}
+
+.control-wrapper-small > .duration {
+    color: #000;
+    left: 180px;
+    top: 0;
+}
+
+.control-wrapper-small> .controls {
+    top: 13px;
+}
+
+.control-wrapper-small > .tracker {
+    left: 65px;
+    top: 42px;
+    width: 221px;
+}
+
+.control-wrapper-small>.liked_songs {
+    top: 23px;
+}
+
+.player-more-wrap {
+    padding-top: 20px;
+    font-size: 11px;
+    color: #989898;
+    line-height: 16px;
+    text-shadow: 1px 1px #101010;
+    width: 400px;
+    display: inline-block;
+    text-align: left
+}
+
+.player-more {
+    background-color: #161616;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 90px;
+    padding: 4px 8px !important;
+    width: 100% !important;
+    overflow: auto;
+    border: solid 1px;
+    border-color: #121212 #202020 #202020 #121212;
+}
+
+.player-more .em-icn {
+    background: url("../../images/em-icon.png");
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 12px;
+    top: 4px;
+}
+
+.player-more .p-list {
+    border-bottom: solid 1px #121212;
+    padding: 4px 0;
+}
+
+.player-more .p-list-2 {
+    border-top: solid 1px #1c1c1c;
+    padding: 4px 0;
+}
+
+.player-more .p-list .p-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.player-more .p-list .p-name {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.player-more p {
+    margin: 0;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9;
+    /* Browsers without rgba support */
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+}
+
+
+/*---------------*/
+
+.player-share a {
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: right;
+    margin: 5px 15px 0 9px;
+}
+
+.player-share a.addplaylist {
+    background: url(../../images/player-plus.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.embed-player-wrap .player-share a.addplaylist {
+    background: url(../images/player-plus_black.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.player-share a.plus-active {
+    background: url(../../images/player-check.png) 0 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: right;
+    margin: 0 15px;
+}
+.divss{
+    padding:40px;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+.iframess{
+    height:100%;
+    width:100%;
+}
+.embed-player-wrap .player-share a.plus-active {
+    background: url(../../images/player-check_black.png) 0 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    margin: 5px 15px 0 9px;
+}
+
+/*.customplayer {
+    padding-top: 16px;
+}*/
+
+.audio-player-wrap {
+    background-color: #fff;
+    /* height: 65px;*/
+    z-index: 9999;
+    padding: 10px;
+    width: 256px;;
+    /*max-width: 275px;*/
+    border:1px solid #000;
+}
+
+body {
+    margin: 0;
+}
+
+.track,
+.track-inset,
+.track-overlay,
+.track-progress {
+    stroke-linecap: round;
+}
+
+.track {
+    stroke: #fff;
+    stroke-opacity: 0.3;
+    stroke-width: 1px;
+}
+
+.track-inset {
+    stroke: #2e2e2e;
+    stroke-width: 2px;
+}
+
+.track-progress {
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: pointer;
+}
+
+.handle {
+    fill: #000;
+    stroke: #fff;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+    cursor: pointer;
+}
+
+
+/* styles for small player */
+
+
+/* palyer close button styles */
+
+.removebtn.player-closebtn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+footer.bottomplayerActive {
+    margin: 0 0 90px;
+}
+
+.player_ctrl img.logo {
+    float: left;
+    width: 37px;
+    margin-right: 15px;
+}
+
+.player-wrap-sm .player_ctrl .addplaylist {
+    position: inherit;
+}
+
+.player_track {
+    width: 277px;
+    clear: both; 
+    padding: 5px 0 0;
+    height: auto;
+    float: left;
+}
+
+
+/* ============= Media queries starts here ================= */
+
+@media only screen and (max-width: 767px) {
+    .myshordyplayer > div {
+        background: #1a1a1a;
+        bottom: 0;
+        height: 120px;
+        position: fixed;
+        width: 100%;
+    }
+    .player {
+        margin: 0px auto;
+    }
+    .control-wrapper {
+        top: -20px;
+    }
+    .control-wrapper1 {
+        top: -20px;
+    }
+    .controls {
+        left: 0px;
+    }
+    .title,
+    .artist,
+    .tracker {
+        /*left: 135px;*/
+    }
+    .tracker {
+        width: 135px;
+    }
+    .duration {
+        right: 0;
+    }
+    /* default black player styles */
+    .control-wrapper-small > .controls .play,
+    .control-wrapper-small > .controls .pause {
+        margin: -4px 4px -4px 10px;
+    }
+    .control-wrapper-small > .controls {
+        left: 55px;
+        top: 6px;
+        width: 70px;
+    }
+    .control-wrapper-small {
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        width: 300px;
+        z-index: 2;
+    }
+    .control-wrapper-small > .title,
+    .control-wrapper-small > .artist,
+    .control-wrapper-small > .tracker {
+        left: 59px;
+        width: 225px;
+    }
+    .control-wrapper-small > .duration {
+        right: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .myshordyplayer > div {
+        background: #1a1a1a;
+        bottom: 0;
+        height: 120px;
+        position: fixed;
+        width: 100%;
+    }
+    .player {
+        height: 115px;
+        width: 240px;
+        margin: 0 auto;
+    }
+    .title {
+        top: 5px !important;
+        left: 0;
+    }
+    .duration {
+        right: 7px !important;
+        top: 5px !important;
+    }
+    .control-wrapper {
+        height: 120px;
+        position: relative;
+        width: 240px;
+        z-index: 2;
+        margin: 20px auto;
+    }
+    .control-wrapper1 {
+        height: 120px;
+        position: relative;
+        width: 240px;
+        z-index: 2;
+        display: block;
+        margin: 20px auto;
+    }
+    .tracker {
+        width: 225px;
+        left: 8px;
+        top: 40px;
+    }
+    .controls {
+        left: 50%;
+        margin: 0px -143px;
+        top: 67px;
+        width: 126px;
+    }
+    .controls .addplaylist {
+        bottom: -6px;
+        right: -50px;
+    }
+    .controls .playspeed {
+        bottom: -3px;
+        right: 130px;
+    }
+}
+@media (min-device-width:769px) and (max-device-width:1024px){
+   .controls .fwd {
+    margin: 0 5px 0 10px;
+}
+.player-share a {
+    margin: 5px 0px 0 9px;
+}
+.controls .rew {
+    margin: 0 5px 0 10px;
+}
+.controls .pause {
+     margin-right: 5px;
+    }
+.controls .play {
+    margin-right: 5px;   
+}
+.player_ctrl img.logo {
+    margin-right: 5px;
+}
+}
+@media only screen and (max-width:650px) {
+    .player-share a {
+        float: left!important;
+    }
+    .playspeed span {
+        padding: 9px 5px 5px 0px;
+    }
+    .player_ctrl {
+        width: 100%;
+    }
+    .player_share {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .audio-player-wrap{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    /*
+   .myshordyplayer > div {
+      background: #1a1a1a;
+      bottom: 0;
+      height: 120px;
+      position: fixed;
+      width: 100%;
+   }
+   .player {
+      height: 115px;
+      width: 300px;
+      margin: 0 auto;
+   }
+   .title {
+      top: 5px !important;
+      left: 0;
+   }
+   .duration {
+      right: 7px !important;
+      top: 5px !important;
+   }
+   .control-wrapper {
+      height: 120px;
+      position: relative;
+      width: 265px;
+      z-index: 2;
+      margin: 20px auto;
+   }
+   .control-wrapper1 {
+      height: 120px;
+      position: relative;
+      width: 265px;
+      z-index: 2;
+      margin: 20px auto;
+      display: block;
+   }
+   .tracker {
+      width: 210px;
+      left: 8px;
+      top: 40px;
+   }
+   .controls {
+      left: 50%;
+      margin: 5px -63px;
+      top: 67px;
+      width: 126px;
+   }
+   .controls .addplaylist {
+      bottom: -6px;
+      right: -58px;
+   }
+   .controls .playspeed {
+      bottom: -3px;
+      right: 150px;
+   }
+   .removebtn.player-closebtn {
+      position: absolute;
+      right: -10px;
+      top: -17px;
+      z-index: 200;
+   }
+   .controls .addfav {
+      background-position: -229px -55px;
+      bottom: 37px;
+      height: 31px;
+      position: absolute;
+      right: -60px;
+      width: 31px;
+   }*/
+}
+/*iframe
+{
+    width: 321px;
+    height: 136px;
+    position: absolute;
+    left: -281px;
+    top: 0px;}
+
+img.Embed-Player{
+position: absolute;
+    right: -20px;
+}
+
+#divoEZTDmF2PQ{
+position: relative;
+    left: 0;
+    width: 100%;
+    top: 40px;
+}*/
+
+iframe{
+left: 0;
+}
+
+img.Embed-Player {
+    right: auto;
+}
